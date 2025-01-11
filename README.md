@@ -1,8 +1,8 @@
-# Docker:
+# Docker
 Docker is a very popular tool introduced to make it easier for developers to create, deploy, and run applications using containers. A container is a utility provided by Docker to package and run an application in a loosely isolated environment. Containers are lightweight and contain everything needed to run an application, such as libraries and other dependencies packed by the developer during the application’s packaging process. This assures developers that their application can be run on any other machine. Here, we’re going to provide you with an ultimate Docker Cheat Sheet that will help you to learn Docker Commands easily.
 This is a summary of commonly used Docker commands and their options, as well as other useful information related to Docker. It will be a handy reference for you to perform various tasks with Docker, such as installing, building, running, shipping, and cleaning up containers
 
-## Docker Installation:
+## Docker Installation
 - [Install Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - [Install CentOS](https://docs.docker.com/engine/install/centos/)
 
@@ -113,11 +113,10 @@ docker cp <my_container>:</path/of/container/files> </path/of/local>
 `VOLUME /data`
 - USER : Sets the user or UID to use when running the image
 `USER appuser`
-
-
 - LABEL : Adds metadata to an image in the form of key-value pairs
-`LABEL version="1.0" maintainer="Danial"`
+  `LABEL version="1.0" maintainer="Danial"`
 - ONBUILD : Configures commands to run when the image is used as the base for another build
-`ONBUILD ADD . /app/src`
+  `ONBUILD ADD . /app/src`
 
+## Docker Compose Commands:
 
