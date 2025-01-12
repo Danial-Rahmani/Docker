@@ -15,6 +15,8 @@ docker login -u <username>
 docker logout <registry>
 
 ## Image Management Commands:
+<!-- Listing Images -->
+docker images
 <!-- Build an image -->
 docker build -t <image_name>:<tag> <Dockerfile_path>
 docker build -t myapp:v1 .
@@ -23,14 +25,10 @@ docker image pull <name_of_image>:<tag>
 docker image pull nginx:alpine
 <!-- Pull an image from a Docker Hub -->
 docker pull <image_name>
-
-## Image Transfer Commands:
-<!-- Build an image -->
+<!-- Pushing an image -->
 docker image push <username_of_registry:image_name:tag>
 
-## Images and Containers Management Commands:
-<!-- Listing Images -->
-docker images
+## Containers Management Commands:
 <!-- Check the Containers -->
 docker ps
 docker ps -a
