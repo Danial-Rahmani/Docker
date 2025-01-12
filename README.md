@@ -28,7 +28,9 @@ docker pull <image_name>
 <!-- Build an image -->
 docker image push <username_of_registry:image_name:tag>
 
-## Containers Management Commands:
+## Images and Containers Management Commands:
+<!-- Listing Images -->
+docker images
 <!-- Check the Containers -->
 docker ps
 docker ps -a
@@ -40,16 +42,6 @@ docker container start nginx
 docker container stop nginx
 <!-- Restarting Containers -->
 docker container restart nginx
-<!-- Removing an Containers -->
-docker rm -f <container_id>
-<!-- Removing a Container and its Volume -->
-docker container rm -v <container_id>
-
-## Docker Image Management Commands:
-<!-- Listing Images -->
-docker images
-<!-- Removing an Image -->
-docker rmi -f <image_name>
 
 ## Docker Network Commands:
 <!-- Creating a Network -->
@@ -62,6 +54,12 @@ docker network ls
 docker network inspect <My_Network>
 
 ## Docker Commands Removing Containers, Images, Volumes, And Networks:
+<!-- Removing an Image -->
+docker rmi -f <image_name>
+<!-- Removing an Containers -->
+docker rm -f <container_id>
+<!-- Removing a Container and its Volume -->
+docker container rm -v <container_id>
 <!-- Removing all Images -->
 docker image rm $(docker image ls -a -q)
 <!-- Removing all unused (containers, images, networks and volumes) -->
